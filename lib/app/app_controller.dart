@@ -2,6 +2,8 @@ import 'package:arquitetura/app/models/appconfig_model.dart';
 import 'package:flutter/foundation.dart';
 
 class AppController {
+
+  //====================================Utilizando Static e construtor privado======================================
   //*Colocando static, final, e construtor privado _(), o singleton fica totalmente protegido de ser instanciado como classe e de ser reatribuido algo a ele 
 
   //*Fazendo um static ele fica disponivel para o app todo
@@ -14,10 +16,17 @@ class AppController {
   //*Criando um construtor privado para ser acessado somente nessa classe !!
   //?Com isso ele não vai ser acessado fora daqui sendo instanciado
   AppController._();
+  //==================================================================================================================
 
+
+  //====================================Utilizando ValueNotifier=====================================================
   //*false -> valor de inicialização
-  //!passei o valueNofier para o 'AppConfigModel'
   // final themeSwitch = ValueNotifier<bool>(false);
+  // changeTheme(bool value){
+  //   themeSwitch.value = value;
+  // }
+  //? Antes estava assim /\
+  //!Depois passei o valueNofier para o 'AppConfigModel' e ficou assim \/
 
   //*Utilizando o model aonde esta o valuenotifier
   final AppConfigModel config = AppConfigModel();
@@ -29,4 +38,5 @@ class AppController {
   changeTheme(bool value){
     config.themeSwitch.value = value;
   }
+  //==================================================================================================================
 }
