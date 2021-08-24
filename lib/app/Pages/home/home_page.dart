@@ -1,5 +1,5 @@
 
-import 'package:arquitetura/app/components/components_switch_widget.dart';
+import 'package:arquitetura/app/Pages/home/components/components_switch_widget.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
