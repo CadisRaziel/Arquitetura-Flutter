@@ -22,7 +22,7 @@ class AppController {
   //*Utilizando o model aonde esta o valuenotifier
   final AppConfigModel config = AppConfigModel();
 
-  //*Facilitação o acesso do config, themeSwitch
+  //*Facilitação o acesso do config, themeSwitch, para não fica um caminho enorme
   bool get isDark => config.themeSwitch.value;
   ValueNotifier<bool> get themeSwitch => config.themeSwitch;
 
