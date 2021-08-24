@@ -1,5 +1,5 @@
 import 'package:arquitetura/app/Pages/home/home_page.dart';
-import 'package:arquitetura/app/controllers/app_controller.dart';
+import 'package:arquitetura/app/app_controller.dart';
 import 'package:flutter/material.dart';
 
 
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<bool>(
-      valueListenable: AppController.instance.themeSwitch,
+      valueListenable: AppController.instance.config.themeSwitch,
       builder: (context, isDart, child) {
         return MaterialApp(
           title: 'Arquitetura de software',
