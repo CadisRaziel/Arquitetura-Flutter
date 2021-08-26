@@ -1,0 +1,6 @@
+existem 3 packages bons para salvar dados localmente
+*SharedPreferences
+*Hive
+*Sqlite
+
+Serviços locais colocamos dentro do 'Services'
